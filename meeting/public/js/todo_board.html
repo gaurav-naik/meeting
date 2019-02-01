@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-xs-6">
+        <h3></h3>
+        <div class="todo-list">
+            {% if (todos.length==0) { %}
+                <h4>No ToDos</h4>
+            {% } else { %}
+                <div>
+                {% for(var i=0;i<=todos.length-1;i++) { %}
+                    {{ todos[i].name }}
+                {% } %}
+                </div>
+            {% } %}
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <h3></h3>
+        <div class="chart-container">
+        </div>
+    </div>
+</div>
+
